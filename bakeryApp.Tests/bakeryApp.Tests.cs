@@ -14,7 +14,8 @@ namespace bakeryApp.Tests
         [TestMethod]
         public void pastriesCost_CostCalculation_int()
         {
-            // int expected = 
+            int expected = 7
+            Assert.AreEqual(expected, Pastry.pastriesCost(int 4));
         }
     }
 }
