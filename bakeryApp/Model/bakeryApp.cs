@@ -22,8 +22,9 @@ namespace bakeryApp
     {
         public int Pastries { get; set;}
 
-        public static int pastriesCost()
+        public static int pastriesCost(int numberOfPastries)
         {
+            
             //Buy 1 for 2$ or 3 for 5$
         }
     }
