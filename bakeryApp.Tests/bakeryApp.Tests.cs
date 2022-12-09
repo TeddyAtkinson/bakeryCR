@@ -11,5 +11,10 @@ namespace bakeryApp.Tests
             int expected = 10
             Assert.AreEqual(expected, Bread.loavesCalc(int 3));
         }
+        [TestMethod]
+        public void pastriesCost_CostCalculation_int()
+        {
+            // int expected = 
+        }
     }
 }
