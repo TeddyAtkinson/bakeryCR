@@ -13,9 +13,9 @@ namespace bakeryApp
 
             int numberOfFreeLoaves = (int)Math.Floor((int)numberOfFreeLoaves / 3);
 
-            int totalCost = (numberOfLoaves - numberOfFreeLoaves) * costPerLoaf;
+            int totalCostBread = (numberOfLoaves - numberOfFreeLoaves) * costPerLoaf;
 
-            return totalCost;
+            return totalCostBread;
         }
     }
     public class Pastry
@@ -24,7 +24,13 @@ namespace bakeryApp
 
         public static int pastriesCost(int numberOfPastries)
         {
-            
+            int sub3past = (numberOfPastries % 3);
+            int pastry3Calc = sub3past * 5;
+            int pastry1Calc = (numberOfPastries - (3 * sub3past)) * 2;
+
+            int totalPastCost = pastry3Calc + pastry1Calc;
+
+            return totalPastCost; 
             //Buy 1 for 2$ or 3 for 5$
         }
     }
