@@ -8,11 +8,9 @@ namespace bakeryApp
         {
             //Buy 2 get 1 free. Every 3rd bread is free
             //Cost of each 5$
-
+            int numberOfLoaves = int.Parse(Console.ReadLine());
             int costPerLoaf = 5;
-
             int numberOfFreeLoaves = (int)Math.Floor((int)numberOfFreeLoaves / 3);
-
             int totalCostBread = (numberOfLoaves - numberOfFreeLoaves) * costPerLoaf;
 
             return totalCostBread;
