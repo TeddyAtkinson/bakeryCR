@@ -1,17 +1,19 @@
+using System;
+//..\bakeryApp\bakeryApp.csproj
+
 namespace bakeryApp
 {
     public class Bread
     {
         public int Loaves {get; set;}
 
-        public static int loavesCalc(int numberOfLoaves)
+        public static double loavesCalc(double numberOfLoaves)
         {
             //Buy 2 get 1 free. Every 3rd bread is free
             //Cost of each 5$
-            int numberOfLoaves = int.Parse(Console.ReadLine());
-            int costPerLoaf = 5;
-            int numberOfFreeLoaves = (int)Math.Floor((int)numberOfFreeLoaves / 3);
-            int totalCostBread = (numberOfLoaves - numberOfFreeLoaves) * costPerLoaf;
+            double costPerLoaf = 5;
+            double numberOfFreeLoaves = Math.Floor(numberOfLoaves / 3);
+            double totalCostBread = (numberOfLoaves - numberOfFreeLoaves) * costPerLoaf;
 
             return totalCostBread;
         }

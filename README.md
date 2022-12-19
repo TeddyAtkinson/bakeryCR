@@ -10,7 +10,6 @@ Price calculation utilizing C#
 * C#
 * .Net6
 * MsTest
-* Spectre
 
 ## Setup/Installation Requirements
 
