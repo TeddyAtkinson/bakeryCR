@@ -8,14 +8,14 @@ namespace bakeryApp.Tests
         [TestMethod]
         public void loavesCalc_CostCalculation_int()
         {
-            int expected = 10
-            Assert.AreEqual(expected, Bread.loavesCalc(int 3));
+            int expected = 15;
+            Assert.AreEqual(expected, Bread.loavesCalc(4));
         }
         [TestMethod]
         public void pastriesCost_CostCalculation_int()
         {
-            int expected = 7
-            Assert.AreEqual(expected, Pastry.pastriesCost(int 4));
+            int expected = 7;
+            Assert.AreEqual(expected, Pastry.pastriesCost(4));
         }
     }
 }
