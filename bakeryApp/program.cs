@@ -13,6 +13,9 @@ namespace bakeryApp
 
             Console.WriteLine("Enter the number of pastries you would like to buy.");
             int numberOfPastries = int.Parse(Console.ReadLine());
+
+
+            Console.WriteLine("Your total order cost is: $" + (Pastry.pastriesCost(numberOfPastries) + Bread.loavesCalc(numberOfLoaves)));
         }
     }
 }
